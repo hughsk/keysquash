@@ -1,0 +1,29 @@
+{
+  "name": "keysquash",
+  "version": "0.0.0",
+  "description": "An experimental JS \"compression\" pass that stores an index of long, frequently used key names",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hughsk/keysquash.git"
+  },
+  "bin": {
+    "keysquash": "bin/keysquash"
+  },
+  "author": "Hugh Kennedy <hughskennedy@gmail.com> (http://hughskennedy.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "falafel": "~0.3.1",
+    "escodegen": "0.0.25",
+    "bases": "~0.1.1"
+  },
+  "readmeFilename": "README.md",
+  "devDependencies": {},
+  "keywords": [
+    "compression",
+    "javascript",
+    "file",
+    "size"
+  ]
+}

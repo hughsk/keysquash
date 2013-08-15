@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+
+var keysquash = require('../')
+
+if (process.argv[2]) {
+  console.log(keysquash(
+    require('fs').readFileSync(process.argv[2])
+  ))
+} else {
+  var buffer = ''
+
+  process.stdin.resume()
+  process.stdin.on('data', function(data) {
+    buffer += data
+  }).once('close', function() {
+    console.log(keysquash(buffer))
+  })
+}
